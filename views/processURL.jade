@@ -1,0 +1,11 @@
+h1 URL Shortener
+form(action="/save", method="post")
+    p
+        label Enter a URL
+        input(type="text", placeholder="Enter url", name="processURL")
+    p
+        input(type="submit", value="Process")
+    p Entered URL:
+    a(href='/processURL') #{originalURL}
+    p Processed URL
+    a(href='/processURL') #{processURL}
